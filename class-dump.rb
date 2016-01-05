@@ -6,6 +6,6 @@ class ClassDump < Formula
   sha1 'c343bec63878161b02c956f49c9c1c8d989b4b5a'
 
   def install
-    xcodebuild "-project", "class-dump.xcodeproj", "-scheme", "all", "SYMROOT=build", "DSTROOT=#{prefix}", "INSTALL_PATH=/bin", "-verbose", "install"
+    xcodebuild "-project", "class-dump.xcodeproj", "-target", "all", "SYMROOT=build", "DSTROOT=#{prefix}", "INSTALL_PATH=/bin", "-verbose", "install"
   end
 end
