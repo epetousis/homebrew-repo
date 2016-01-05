@@ -2,10 +2,10 @@ require 'formula'
 
 class ClassDump < Formula
   homepage 'http://stevenygard.com/projects/class-dump/'
-  url 'http://stevenygard.com/download/class-dump-3.5.tar.gz'
-  sha1 'e878d552ed175912ba4d8325718dda8dca680430'
+  url 'https://github.com/nygard/class-dump/archive/3.5.tar.gz'
+  sha1 'e407ad77ba2a75dce275c03f0a054a314b267a88'
 
   def install
-    bin.install 'class-dump'
+    xcodebuild "-project", "class-dump.xcodeproj", "-scheme", "all", "SYMROOT=build", "DSTROOT=#{prefix}", "INSTALL_PATH=/bin", "-verbose", "install"
   end
 end
