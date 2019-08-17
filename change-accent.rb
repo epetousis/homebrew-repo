@@ -1,10 +1,10 @@
 class ChangeAccent < Formula
   desc "A simple utility to change the system accent on macOS 10.14+"
   homepage "https://github.com/epetousis/change-accent"
-  url "https://github.com/epetousis/change-accent/archive/0.0.1.zip"
+  url "https://github.com/epetousis/change-accent/archive/0.0.2.zip"
   head "https://github.com/epetousis/change-accent.git"
-  version "0.0.1"
-  sha256 "3dd60c1529f783e37090e9c0f08e32be05ef961bda0c526d915528349a275e37"
+  version "0.0.2"
+  sha256 "7d51f0e82a97e5d5f1f0230d58c151da2f6a677a5542e32f35d9e72a71240604"
 
   depends_on :xcode => :build
   depends_on :macos => :mojave
